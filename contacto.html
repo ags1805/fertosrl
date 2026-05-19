@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- SEO -->
+
+    <title>
+        Contacto | Ferto SRL
+    </title>
+
+    <meta name="description"
+        content="Contactate con Ferto SRL para solicitar presupuestos y soluciones metalúrgicas industriales.">
+
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div id="header"></div>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="page-hero">
+
+            <div class="page-hero-overlay"></div>
+
+            <div class="container page-hero-content">
+
+                <span>
+                    Ferto SRL
+                </span>
+
+                <h1>
+                    Contacto
+                </h1>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="contact-section fade-in">
+
+            <div class="container contact-container">
+
+
+                <!-- INFO -->
+
+                <div class="contact-info">
+
+                    <div class="section-title">
+
+                        <span>
+                            Contactanos
+                        </span>
+
+                        <h2>
+                            Solicitar presupuesto
+                        </h2>
+
+                        <p>
+                            Completá el formulario y nos pondremos en contacto a la brevedad.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ITEMS -->
+
+                    <div class="contact-items">
+
+                        <div class="contact-item">
+
+                            <h3>
+                                Teléfono
+                            </h3>
+
+                            <p>
+                                +54 9 11 0000 0000
+                            </p>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <h3>
+                                Email
+                            </h3>
+
+                            <p>
+                                info@fertosrl.com.ar
+                            </p>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <h3>
+                                Ubicación
+                            </h3>
+
+                            <p>
+                                Buenos Aires, Argentina
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <div class="contact-form-wrapper">
+
+                    <form class="contact-form" id="contact-form" action="php/contact-form.php" method="POST">
+
+                        <input type="text" name="website" class="hidden-field">
+
+                        <!-- ROW -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Nombre
+                                </label>
+
+                                <input type="text" id="name" name="name" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="company">
+                                    Empresa
+                                </label>
+
+                                <input type="text" id="company" name="company">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ROW -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Teléfono
+                                </label>
+
+                                <input type="text" id="phone" name="phone" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input type="email" id="email" name="email" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SERVICE -->
+
+                        <div class="form-group">
+
+                            <label for="service">
+                                Servicio
+                            </label>
+
+                            <select id="service" name="service">
+
+                                <option value="">
+                                    Seleccionar
+                                </option>
+
+                                <option value="Estructuras metálicas">
+                                    Estructuras metálicas
+                                </option>
+
+                                <option value="Montajes industriales">
+                                    Montajes industriales
+                                </option>
+
+                                <option value="Mantenimiento industrial">
+                                    Mantenimiento industrial
+                                </option>
+
+                                <option value="Otro">
+                                    Otro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Mensaje
+                            </label>
+
+                            <textarea id="message" name="message" rows="6" required></textarea>
+
+                        </div>
+
+
+                        <!-- BUTTON -->
+
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+
+                            <span>
+                                Enviar consulta
+                            </span>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <div id="footer"></div>
+
+
+    <!-- JS -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

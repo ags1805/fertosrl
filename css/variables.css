@@ -1,0 +1,31 @@
+:root {
+
+    /* COLORES */
+
+    --color-white: #ffffff;
+    --color-yellow: #ffc031;
+    --color-dark: #3b3b3b;
+    --color-gray: #56585e;
+    --color-black: #000000;
+
+
+    /* TIPOGRAFIAS */
+
+    --font-title: 'Roboto', sans-serif;
+    --font-text: 'Open Sans', sans-serif;
+
+
+    /* TAMAÑOS */
+
+    --container-width: 1200px;
+    --section-spacing: 100px;
+    --border-radius: 12px;
+
+
+    /* EFECTOS */
+
+    --transition: all 0.3s ease;
+
+    --shadow-soft: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+}
