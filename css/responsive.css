@@ -88,6 +88,26 @@
     .cta-box h2 {
         font-size: 36px;
     }
+
+    .featured-project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project-image img {
+        height: 350px;
+    }
+
+    .featured-project-content h2 {
+        font-size: 32px;
+    }
+
+    .difference-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
 }
 
 /* =========================
