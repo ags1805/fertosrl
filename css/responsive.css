@@ -107,6 +107,33 @@
 
     }
 
+    .service-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-block.reverse .service-block-image,
+    .service-block.reverse .service-block-content {
+        order: initial;
+    }
+
+    .project-modal-content img{
+
+        height:250px;
+
+    }
+
+    .project-modal-body{
+
+        padding:25px;
+
+    }
+
+    .project-modal-body h2{
+
+        font-size:30px;
+
+    }
 
 }
 
