@@ -117,12 +117,6 @@
         order: initial;
     }
 
-    .project-modal-content img{
-
-        height:250px;
-
-    }
-
     .project-modal-body{
 
         padding:25px;
@@ -221,10 +215,6 @@
 
     .projects-gallery-grid {
         grid-template-columns: 1fr;
-    }
-
-    .gallery-project-card img {
-        height: 280px;
     }
 
     .projects-filters {
