@@ -223,6 +223,10 @@
         grid-template-columns: 1fr;
     }
 
+    .gallery-project-card img {
+        height: 280px;
+    }
+
     .projects-filters {
         gap: 12px;
     }
