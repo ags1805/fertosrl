@@ -324,7 +324,43 @@ h6 {
     margin-top: 60px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 25px 0;
-    text-align: center;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.developer-credit, .developer-credit a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.developer-credit {
+    padding-right: 85px;
+}
+
+.developer-credit a {
+    font-weight: 700;
+}
+
+.developer-credit a:hover {
+    color: var(--color-yellow);
+}
+
+@media (max-width: 768px) {
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .developer-credit {
+        padding-right: 0;
+    }
 }
 
 /* =========================
@@ -1152,7 +1188,7 @@ h6 {
 
 .faq-item {
 
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
@@ -1175,6 +1211,8 @@ h6 {
     font-size: 22px;
 
     font-weight: 700;
+
+    color: var(--color-white);
 
     text-align: left;
 
@@ -1206,7 +1244,7 @@ h6 {
 
     padding-bottom: 30px;
 
-    color: var(--color-gray);
+    color: rgba(255, 255, 255, 0.85);
 
 }
 
