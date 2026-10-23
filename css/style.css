@@ -1874,3 +1874,13 @@ textarea {
     z-index: 2;
 
 }
+/* Empresa vinculada: enlace discreto dentro del menú principal. */
+.nav-lugo a::after {
+    content: '↗';
+    color: var(--color-yellow);
+    font-size: .82em;
+    margin-left: 5px;
+}
+
+/* El botón de contacto se mantiene en el header de escritorio. */
+.nav-contact-mobile { display: none; }

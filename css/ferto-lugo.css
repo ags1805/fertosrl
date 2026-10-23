@@ -1,0 +1,161 @@
+/* Presentación de LUGO dentro del sistema visual de Ferto SRL. */
+.ferto-lugo-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.ferto-lugo-card {
+    display: grid;
+    grid-template-columns: 1.12fr .88fr;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: var(--border-radius);
+    background: #252628;
+    box-shadow: 0 24px 70px rgba(0,0,0,.24);
+}
+
+.ferto-lugo-copy {
+    padding: clamp(34px, 5vw, 72px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ferto-lugo-eyebrow {
+    color: var(--color-yellow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.ferto-lugo-copy h2 {
+    font-size: clamp(32px, 3.65vw, 50px);
+    line-height: 1.12;
+    letter-spacing: -.025em;
+    margin-bottom: 24px;
+    color: var(--color-white);
+}
+
+.ferto-lugo-copy h2 strong {
+    font-weight: 900;
+}
+
+.ferto-lugo-copy > p {
+    max-width: 560px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 26px;
+}
+
+.ferto-lugo-services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 11px;
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+.ferto-lugo-services li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    color: rgba(255,255,255,.87);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ferto-lugo-services li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: var(--color-yellow);
+    border-radius: 50%;
+    flex: 0 0 7px;
+}
+
+.ferto-lugo-button {
+    gap: 18px;
+}
+
+.ferto-lugo-button span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.ferto-lugo-visual {
+    position: relative;
+    background: linear-gradient(140deg, #e7e7e9, #f4f4f5 48%, #dcdde0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    min-width: 0;
+    padding: 52px 34px;
+}
+
+.ferto-lugo-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: linear-gradient(rgba(40,40,44,.045) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(40,40,44,.045) 1px, transparent 1px);
+    background-size: 34px 34px;
+    opacity: .6;
+}
+
+.ferto-lugo-logo-card {
+    position: relative;
+    width: min(100%, 465px);
+    padding: clamp(16px, 3vw, 34px);
+    border: 1px solid #d5d5d8;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 20px 45px rgba(27,27,30,.13);
+}
+
+.ferto-lugo-logo-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.ferto-lugo-caption {
+    position: relative;
+    text-align: center;
+    color: #515259;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+    .ferto-lugo-card { grid-template-columns: 1fr 1fr; }
+    .ferto-lugo-services { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 800px) {
+    .ferto-lugo-section { padding: 48px 0; }
+    .ferto-lugo-card { grid-template-columns: 1fr; }
+    .ferto-lugo-copy { padding: 36px 28px; }
+    .ferto-lugo-visual { min-height: 280px; padding: 40px 28px; }
+    .ferto-lugo-services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 500px) {
+    .ferto-lugo-copy { padding: 32px 22px; }
+    .ferto-lugo-services { grid-template-columns: 1fr; }
+    .ferto-lugo-visual { min-height: 240px; padding: 32px 20px; }
+    .ferto-lugo-caption { font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ferto-lugo-button { transition: none; }
+}

@@ -35,6 +35,7 @@ async function initSite() {
     initProjectFilters();
     initFaq();
     initProjectModal();
+    initLugoTracking();
 
 }
 
@@ -267,3 +268,16 @@ function initProjectModal() {
 }
 
 initSite();
+
+/* Registro de navegación de Ferto hacia LUGO (requiere configurar el evento en GTM). */
+function initLugoTracking() {
+    document.querySelectorAll('[data-lugo-source]').forEach(link => {
+        link.addEventListener('click', () => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                event: 'ferto_lugo_click',
+                origen: link.dataset.lugoSource
+            });
+        });
+    });
+}
